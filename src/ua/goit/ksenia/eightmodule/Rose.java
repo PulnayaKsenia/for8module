@@ -25,15 +25,10 @@ public class Rose extends Flower implements Comparable<Rose> {
         this.number = number;
     }
 
-
     @Override
     public String toString() {
-        return "Rose{" +
-                "color='" + color + '\'' +
-                ", number=" + number +
-                '}';
+        return "Color and numbers of Rose: " + color + number;
     }
-
 
     @Override
     public int compareTo(Rose o) {

@@ -14,7 +14,6 @@ public class Flower {
         roses.add(new Rose("Pink", 19));
         roses.add(new Rose("Green", 3));
 
-
         roses
                 .stream()
                 .forEach(p -> System.out.println(p));

@@ -6,9 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 public class BouquetOfFlowers {
-
     public static void main(String[] args) {
-
         BouquetOfFlowers bouquetF = new BouquetOfFlowers();
 
         ArrayList<Flower> flower = new ArrayList<>();
@@ -33,20 +31,15 @@ public class BouquetOfFlowers {
         flower
                 .stream()
                 .forEach(f -> System.out.println(f));
-
     }
-
 
     private List<Flower> flowers;
 
     public List<Flower> getFlowers() {
-
         return flowers;
     }
 
     public void setFlowers(List<Flower> flowers) {
-
         this.flowers = flowers;
     }
-
 }

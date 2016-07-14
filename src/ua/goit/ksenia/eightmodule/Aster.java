@@ -1,9 +1,7 @@
 package ua.goit.ksenia.eightmodule;
 
-
 public class Aster extends Flower{
-
-    private Integer number = 8;
+    private Integer number;
 
     public Integer getNumber() {
         return number;
@@ -19,8 +17,6 @@ public class Aster extends Flower{
 
     @Override
     public String toString() {
-        return "Aster{" +
-                "number=" + number +
-                '}';
+        return "Numbers of Aster are " + number;
     }
 }

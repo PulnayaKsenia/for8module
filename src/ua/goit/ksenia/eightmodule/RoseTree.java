@@ -3,13 +3,12 @@ package ua.goit.ksenia.eightmodule;
 public class RoseTree extends Flower {
     private String color;
     private Integer number;
+    private Rose rose;
 
     public RoseTree(String color, Integer number) {
         this.color = color;
         this.number = number;
     }
-
-    private Rose rose;
 
     public Rose getRose() {
         return rose;
@@ -37,9 +36,6 @@ public class RoseTree extends Flower {
 
     @Override
     public String toString() {
-        return "RoseTree{" +
-                "color='" + color + '\'' +
-                ", number=" + number +
-                '}';
+        return "Color and numbers of RoseTree{" + color + number;
     }
 }

@@ -1,7 +1,6 @@
 package ua.goit.ksenia.eightmodule;
 
 public class Tulip extends Flower{
-
     private Integer madeIn;
     private Integer number;
 
@@ -28,9 +27,6 @@ public class Tulip extends Flower{
 
     @Override
     public String toString() {
-        return "Tulip{" +
-                "madeIn=" + madeIn +
-                ", number=" + number +
-                '}';
+        return "Tulips are from " + madeIn + "; numbers of Tulips" + number;
     }
 }
