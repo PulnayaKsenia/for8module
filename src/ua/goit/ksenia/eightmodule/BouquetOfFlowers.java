@@ -7,6 +7,17 @@ import java.util.Map;
 
 public class BouquetOfFlowers {
     public static void main(String[] args) {
+        CesarCod cesarCod = new CesarCod();
+
+        String representation = "HELLO! It's our flower shop.\n" +
+                "There are the most beautiful and fresh flowers from Ukraine,Netherlands and Ecuador!!!";
+
+        String encryptRepresentation = cesarCod.encrypt(representation, 3, 5);
+        String decryptRepresentation = cesarCod.decrypt(representation, 5, 3);
+
+        System.out.println("Encrypted Representation: " + encryptRepresentation + ".\n " +
+                "Decrypted Representation: " + decryptRepresentation + ".");
+
         BouquetOfFlowers bouquetF = new BouquetOfFlowers();
 
         ArrayList<Flower> flower = new ArrayList<>();
@@ -43,3 +54,4 @@ public class BouquetOfFlowers {
         this.flowers = flowers;
     }
 }
+
