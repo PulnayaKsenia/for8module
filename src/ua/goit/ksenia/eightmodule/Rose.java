@@ -27,7 +27,7 @@ public class Rose extends Flower implements Comparable<Rose> {
 
     @Override
     public String toString() {
-        return "Color and numbers of Rose: " + color + number;
+        return "Color and numbers of Rose: " + color + " " + number;
     }
 
     @Override

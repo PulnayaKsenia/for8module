@@ -1,19 +1,19 @@
 package ua.goit.ksenia.eightmodule;
 
 public class Tulip extends Flower{
-    private Integer madeIn;
+    private String madeIn;
     private Integer number;
 
-    public Tulip(Integer madeIn, Integer number) {
+    public Tulip(String madeIn, Integer number) {
         this.madeIn = madeIn;
         this.number = number;
     }
 
-    public Integer getMadeIn() {
+    public String getMadeIn() {
         return madeIn;
     }
 
-    public void setMadeIn(Integer madeIn) {
+    public void setMadeIn(String madeIn) {
         this.madeIn = madeIn;
     }
 

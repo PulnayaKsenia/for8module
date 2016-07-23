@@ -1,21 +1,45 @@
 package ua.goit.ksenia.eightmodule;
 
-import java.util.SortedSet;
-import java.util.TreeSet;
-
 public class Flower {
-    public static void main(String[] args) {
-        SortedSet<Rose> roses = new TreeSet<>();
-        roses.add(new Rose("Red", 25));
-        roses.add(new Rose("White", 7));
-        roses.add(new Rose("Black", 5));
-        roses.add(new Rose("Yellow", 15));
-        roses.add(new Rose("Blue", 9));
-        roses.add(new Rose("Pink", 19));
-        roses.add(new Rose("Green", 3));
+    private String name;
+    private Integer number;
+    private String color;
+    private String madeIn;
 
-        roses
-                .stream()
-                .forEach(p -> System.out.println(p));
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getNumber() {
+        return number;
+    }
+
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getMadeIn() {
+        return madeIn;
+    }
+
+    public void setMadeIn(String madeIn) {
+        this.madeIn = madeIn;
+    }
+
+    @Override
+    public String toString() {
+        return name + " : " + number + " - " + color + " - " + madeIn;
     }
 }
